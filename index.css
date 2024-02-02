@@ -1,0 +1,245 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+.container{
+    margin-left: auto;
+    margin-right: auto;
+}
+html{
+    scroll-behavior: smooth;
+}
+/*start headre*/
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px;
+    position: relative;
+    z-index: 20;
+}
+
+span:last-child{
+    color: #BC6C25;
+    
+}
+.header ul{
+    display: flex;
+}
+.header li:first-child{
+    background-color: #DDA15E;
+    border-radius: 10px;
+   
+   
+}
+.header ul li{
+  margin: 10px;
+  list-style-type: none;
+}
+.header ul a{
+    color:   #606C38;
+    text-decoration: none;
+}
+.header h3 i{
+    display: none;
+}
+#nav i{
+    font-size: 25px;
+    color: #606C38;
+}
+@media (max-width: 800px) {
+    #menu{
+        position: absolute;
+        display: block;
+        left: 90%;
+        font-size: 30px;
+        cursor: pointer;
+        transform: translateX(40px);
+        z-index: 10;
+    }
+    .header li:first-child{
+        background-color: transparent;
+    }
+    .header ul{
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color:  #89896C;
+        z-index: 9;
+    }
+    .header ul.open {
+        display: block;
+    }
+    .header ul a{
+        color: #FFE8D6;
+    }
+
+}
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+
+    }
+}
+    /*end headre*/
+    /*start landing*/
+    .landing{
+        background: url(bg-portfolio.jpg);
+        height: calc(100vh - 80px);
+        background-position: center;
+        background-size: cover;
+        position: relative;
+    }
+    .landing .text{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+    .landing p{
+        width: 360px;
+        font-size: 18px;
+    }
+    .landing h1{
+        color: #DDBEA9;
+    }
+
+    /*end landing*/
+    /*star Services*/
+.Services-parent{
+    text-align: center;
+}
+.title{
+    color: #BC6C25;
+    margin: 35px;
+    text-align: center;
+}
+.Services, .project{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 10px;
+    padding: 10px;
+}
+.Services .card1{
+    background-color: #FCF2B0;
+    padding: 10px;
+    border-radius: 20px;
+}
+.Services .card1 i{
+    font-size: 40px;
+    color: #DDA15E;
+}
+.Services .card1 h2{
+    color: #BC6C25;
+}
+
+/*end Services*/
+/*start about*/
+.about{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 250px);
+    justify-content: center;
+    
+}
+.about img{
+    width: 100%;
+    
+}
+.about .text{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+    text-align: justify;
+}
+ button{
+     width: 160px;
+    padding: 10px;
+    border-radius: 30px;
+    border: 2px solid #606C38;
+    background-color:rgba(0, 0, 0, 0.5 );
+    color: #FEFAE0;
+ }
+
+/*end about*/
+/*start project*/
+ .project img{
+  width: 100%;
+ }
+ .card{
+    text-align: center;
+    background-color: #FBEC88;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding-bottom: 15px;
+ }
+ .card a{
+    display: block;
+    text-decoration: none;
+    border: solid 2px #606C38;
+    background-color:rgba(119, 135, 69, 0.5 );
+    border-radius: 30px;
+    text-align: center;
+    padding: 10px;
+    width: 160px;
+    margin: 0 auto;
+ }
+/*end project*/
+/*start contact*/
+.contact{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 300px);
+    gap: 5px;
+   justify-content: center;
+}
+iframe{
+    width: 100%;
+    height: 100%;
+}
+.icon-data{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon-data .center i{
+   font-size: 40px;
+}
+.icon-data .center div{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+/*end contact*/
+.footer{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: #606C38;
+   margin-top: 40px;
+   height: 100px;
+}
+.footer span, i{
+    color: #FBEC88;
+}
+.linkedin i{
+    color: #0E76A8;
+}
+.github i{
+    color:#432853;
+}
+.email i{
+    color: #E63946;
+}
+    
